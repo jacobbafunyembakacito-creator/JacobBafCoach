@@ -108,6 +108,18 @@ document.querySelectorAll('.nav-links a').forEach(anchor => {
     });
 });
 
+document.addEventListener('DOMContentLoaded', () => {
+    const hamburger = document.querySelector('.hamburger');
+    const navLinks = document.querySelector('.nav-links');
+    
+    hamburger.addEventListener('click', () => {
+        // Toggle nav menu
+        navLinks.classList.toggle('active');
+        
+        // Animate hamburger
+        hamburger.classList.toggle('active');
+    });
+});
 /* ===================== */
 /* CONTACT FORM SUBMISSION (FAKE) */
 /* ===================== */
